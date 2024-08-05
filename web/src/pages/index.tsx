@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import Task from '@/model/Task'
 import { initialTasks } from '@/utils/TaskList'
-import { Flex, Button, Badge, Avatar, Card , Space, Checkbox} from "antd";
+import { Flex, Button, Badge, Card} from "antd";
 
 const groupTasksBygroup = (tasks: Task[]) => {
   return tasks.reduce((groups: { [key: number]: Task[] }, task: Task) => {
